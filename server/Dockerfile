@@ -1,10 +1,18 @@
-FROM node:20-alpine3.16 as backend
-WORKDIR /app/server
-COPY package.json package-lock.json ./
+# Base image
+FROM node:14-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
 RUN npm install
+
+# Copy the application code
 COPY . .
 
-EXPOSE 8082
-
-CMD ["npm", "run", "start:dev"]
+# Start the application
+CMD ["node", "app.js"]
 
