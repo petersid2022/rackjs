@@ -34,21 +34,8 @@ To run Rack JS locally, follow these steps:
 
 1. Clone the repository: ```git clone https://github.com/petersid2022/rackjs.git```
 2. Navigate to the project directory: ```cd rack-js```
-3. Install the dependencies: ```npm install```
-4. Set up the environment variables:
-   * Create a .env file in the root directory of the project.
-   * Define the required environment variables in the .env file, such as the database connection URI and API keys.
-5. Start the development server: ```npm start```
-6. Open your browser and visit http://localhost:3000 to access Rack JS.
-
-## Deployment
-
-To deploy Rack JS to a production environment, you can follow the steps below:
-
-1. Build the production-ready code: ```npm run build```
-2. Set up the necessary configuration for your chosen deployment platform (e.g., Heroku, AWS, DigitalOcean).
-3. Deploy the built code to your hosting platform, ensuring it is connected to your MongoDB database and the required environment variables are set.
-4. Access the deployed app through the assigned URL or domain.
+4. Start the development server: ```docker-compose up```
+5. Open your browser and visit http://localhost:3000 to access Rack JS.
 
 ## Contributing
 
